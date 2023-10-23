@@ -1,0 +1,145 @@
+body {
+  /* coloca a imagem de fundo */
+  background-image: url(taylorbg.jpg);
+}
+p::first-letter {
+  /* determina que a primeira letra em p seja diferente */
+  color: #903931;
+  font-size: 200%;
+}
+h2::first-letter {
+  /* determina que a primeira letra em h2 seja diferente */
+  color: #903931;
+  font-size: 200%;
+}
+a {
+  /* mudando o tamanho e cor dos links */
+  color: rgb(211, 196, 196);
+  font-size: large;
+}
+
+#menu {
+  /* definição da minha barra de links */
+  margin: auto;
+  align-items: center;
+  border-radius: 25px;
+  border: 5px solid #906d63;
+  width: 90%;
+  background: #906d00;
+  padding: 30px;
+}
+#link {
+  /* estilização dos links dentro da barra de links */
+  margin-right: 130px;
+  width: auto;
+  margin-left: 120px;
+  color: #080324;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 10px;
+}
+#rodape {
+  /* definição do footer */
+  font-style: italic;
+  margin: auto;
+  background-color: #906d00;
+  border: 5px solid #906d63;
+  text-align: center;
+  border-radius: 25px;
+  width: 97%;
+  padding: 5px;
+  bottom: 0;
+  position: fixed;
+}
+
+#foto {
+  /* dimensionamento da imagem da taylor no index */
+  position: absolute;
+  align-items: center;
+  margin-right: 750px;
+  margin-left: 50px;
+  margin-bottom: 950px;
+  margin-top: 180px;
+  border-radius: 200px 200px 200px 200px;
+  width: 280px;
+  height: 280px;
+}
+
+#p {
+  font-style: italic; /* mudança do p para itálico e mudança de tamanho */
+  font-size: large;
+}
+
+.item1 {
+  grid-area: header;
+} /* meu grid na aba de sobre mim */
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  /* inicialmente o container e espaçamento dele */
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  background-color: #906d00;
+  padding: 10px;
+}
+
+.grid-container > div {
+  /* estilização do container e texto */
+  font-style: italic;
+  background-color: rgba(192, 166, 155, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+#project {
+  /* estilização de fundo para aba projetos */
+  width: 90%;
+  height: 600px;
+  position: relative;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgba(106, 92, 47, 0.7);
+  padding: 20px;
+  margin: 10px auto;
+}
+#p1 {
+  /* alinhamento de imagem de projeto */
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+#p2 {
+  /* alinhamento de imagem de projeto */
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-left: 210px;
+}
+
+#p3 {
+  /* alinhamento de imagem de projeto */
+  float: right;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 10px;
+}
